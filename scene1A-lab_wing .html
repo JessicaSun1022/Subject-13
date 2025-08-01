@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scene1A - The Lab Wing</title>
+        <link rel = "stylesheet" href = "styles/scene1A.css">
+    </head>
+
+    <body>
+        <div id = "scene">
+            <img id = "scene-bg" src = "backgrounds/LabWing.png">
+
+            <div id = "ui-container">
+                <p id = "choice-prompt">
+                    What do you do now? How much time before they catch you?
+                </p>
+
+                <nav id = "choices">
+                    <a href = "#" class = "choice">Investigate the terminal</a>
+                    <a href = "scene2A-corridor.html" class = "choice">Crawl through the dark corridor</a>
+                    <a href = "scene1B-admin_wing.html" class = "choice">Go back to the Admin Wing</a>
+                </nav>
+
+                <div id = "dialogue-box">
+                    <p id = "dialogue-text">
+                        You step into the Lab Wing, where shattered containment pods and overtruned chairs lie in the flickering light.
+                        In front of you, a damanged terminal still flickers with fragments of data. To you right, the coridor is pitch black and blocked by debris.
+                        It has a gap just wide enough for you to crawl through.
+                    </p>
+                </div>
+            </div>
+
+            <!--Popup for scene1A-1-->
+            <div id = "popup-terminal" class = "popup hidden">
+                <div class = "popup-content">
+                    <h2>Experiment Notes</h2>
+                    <p>
+                        Subject 13 retained clarity longer than any other... unusual neuroplasticy. Recommed isolation.
+                    </p>
+                    <p>
+                        Despite subject 13 retaining clarity, serveral test subjects have begun exhibiting erratic behaviors. Reports cite sudden aggression and signs of cognitive overload.
+                    </p>
+                    <p>
+                        <span class = "strikethrough">Administer double dose next cycle?</span>
+                    </p>
+
+                    <button id = "close-popup" class = "choice">Close</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
