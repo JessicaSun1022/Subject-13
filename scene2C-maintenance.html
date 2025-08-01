@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scene 2C - Emergency Tunnel</title>
+        <link rel = "stylesheet" href = "styles/scene2C.css">
+    </head>
+
+    <body>
+        <div id = "scene">
+            <img id = "scene-bg" src = "backgrounds/EmergencyTunnel.png">
+
+            <div id = "ui-container">
+                <p id = "choice-prompt">
+                    What do you do now?
+                </p>
+
+                <nav id = "choices">
+                    <a href = "scene3-lastchoice.html" class = "choice">Go up the stairwell</a>
+                    <a href = "#popup-closet" class = "choice">Explore the closet</a>
+                </nav>
+
+                <div id = "dialogue-box">
+                    <p id = "dialogue-text">
+                        You step through the maintenance hall and see a dark stairwell leading up. 
+                        To your left is a closet. Maybe it contains more information about you and this place.
+                    </p>
+                </div>
+            </div>
+
+            <!--Popup for maintenance-->
+            <div id = "popup-closet" class = "popup">
+                <div class = "popup-content">
+                    <h2>Test logs</h2>
+                    <p>
+                        Subject 13 escaped containment during Trial 4. The hunters found 13 with no memory.
+                        Reinserted into the loop.
+                    </p>
+
+                    <a href = "#scene" id = "close-popup" class = "choice">Close</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

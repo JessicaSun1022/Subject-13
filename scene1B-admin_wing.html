@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scene 1B - Admin Wing</title>
+        <link rel = "stylesheet" href = "styles/scene1B.css">
+    </head>
+
+    <body>
+        <div id = "scene">
+            <img id = "scene-bg" src = "backgrounds/AdminWing.png">
+
+            <div id = "ui-container">
+                <p id = "choice-prompt">
+                    What do you do now? How long until they find you?
+                </p>
+
+                <nav id = "choices">
+                    <a href = "#popup-terminal" class = "choice">Look at terminal logs</a>
+                    <a href = "scene2B-control_room.html" class = "choice">Enter the Control Room</a>
+                    <a href = "scene2C-maintenance.html" class = "choice">Go through maintenance hall</a>
+                </nav>
+
+                <div id = "dialogue-box">
+                    <p id = "dialogue-text">
+                        You step into the Admin Wing. It's extremely dark and drawers are open, like someone left in a hurry.
+                        Theres a control room down the hall and a maintenance room to your left. In front of you is a blue flickering
+                        terminal with the words:
+                    </p>
+
+                    <blockquote id = "dialogue-terminal">
+                        "Facility status: Lockdown. All personnel evacuated."
+                    </blockquote>
+                </div>
+            </div>
+
+            <!--Popup for scene 2B-1-->
+            <div id = "popup-terminal" class = "popup">
+                <div class = "popup-content">
+                    <h2>Director's Email Thread</h2>
+                    <p>
+                        “The team leader wants to stop the trial. But we're so close. I can feel it.
+                        He says it's unethical to skip animal testing. He says this isn't treatment,
+                        that it's behavior modification. He's wrong. Everything can be excused if
+                        it's for the greater good.”
+                    </p>
+                    <p>
+                        "Even now, Subject 13 is showing signs of remember prior resets. This isn't the first cycle.
+                        We need to extract the information from 13 NOW."
+                    </p>
+
+                    <a href = "#scene" id = "close-popup" class = "choice">Close</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
