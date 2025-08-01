@@ -33,11 +33,11 @@ html, body{
 
 #choice-prompt{
     float: right;
+    color: white;
     background: rgba(26,26,26,0.8);
     border: 2px solid rgb(68,68,68);
     border-radius: 6px;
     padding: 8px 12px;
-    color: white;
     margin-bottom: 10px;
 }
 
@@ -50,8 +50,8 @@ html, body{
 }
 
 .choice{
-    background: black;
     color: white;
+    background: black;
     text-decoration: none;
     padding: 10px 16px;
     border: 1px solid rgb(68,68,68);
@@ -70,47 +70,4 @@ html, body{
     color: white;
     line-height: 24px;
     padding: 20px 24px;
-}
-
-.popup{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 80%;
-    max-width: 600px;
-    background: rgba(26,26,26,0.95);
-    border: 2px solid rgb(68,68,68);
-    border-radius: 8px;
-    padding: 20px;
-    color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 100;
-    pointer-events: none;
-}
-
-#close-popup{
-    display: inline-block;
-    margin-top: 16px;
-}
-
-#popup-terminal:target{
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.popup-content h2{
-    margin-bottom: 24px;
-    font-size: 20px;
-}
-
-.popup-content p{
-    margin: 12px;
-    line-height: 24px;
-}
-
-.strikethrough{
-    text-decoration: line-through;
-    color: rgba(200,200,200,0.8);
 }
