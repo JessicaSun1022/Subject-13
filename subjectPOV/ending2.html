@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ending 2 - The Escape</title>
+        <link rel = "stylesheet" href = "styles/ending2.css">
+    </head>
+
+    <body>
+        <div id = "scene">
+            <img id = "scene-bg" src = "backgrounds/Ending2.png">
+
+            <div id = "dialogue-box">
+                <p id = "dialogue-text">
+                    After a grueling climb you emerge in the woods. You're disoriented but free. You still don't know the entire truth
+                    of what's happening in the underground lab, but at least you got out.
+                </p>
+
+                <blockquote id = "last-words">
+                    "You're free ... for now."
+                </blockquote>
+
+                <nav id = "end-actions">
+                    <a href = "#game-over" class = "choice">
+                        Continue
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <div id = "game-over" class = "overlay">
+            <div class = "overlay-content">
+                <h2>Game Over</h2>
+                <p>
+                    You have escaped. You're free...but for how long?
+                </p>
+                <a href = "scene0.html" class = "choice">Replay</a>
+            </div>
+        </div>
+
+        <script>
+            localStorage.setItem('ending2', 'true');
+        </script>
+    </body>
+</html>
