@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scene 1B - Security Logs</title>
+        <link rel = "stylesheet" href = "styles/scene1B.css">
+    </head>
+
+    <body>
+        <div id = "scene">
+            <img id = "scene-bg" src = "backgrounds/SecurityLogs.png">
+
+            <div id = "ui-container">
+                <p id = "choice-prompt">
+                    What do you do now?
+                </p>
+
+                <nav id = "choices">
+                    <a href = "#popup-email" class = "choice">Read the Director's email</a>
+                    <a href = "scene1A-proto_files.html" class = "choice">Go back to the protocol files</a>
+                    <a href = "scene2C-tunnel.html" class = "choice">Go through the tunnel</a>
+                </nav>
+
+                <div id = "dialogue-box">
+                    <p id = "dialogue-text">
+                        You look into the card-swipe records. You see the director's
+                        badge accessed the service tunnel at 02:13. The elevator logs are erased.
+                    </p>
+                </div>
+            </div>
+
+            <div id = "popup-email" class = "popup">
+                <div class = "popup-content">
+                    <h2>Director's Email</h2>
+                    <p>
+                        From: director@lab13
+                    </p>
+                    <p>
+                        Subject: Trial 13 Acceleration
+                    </p>
+                    <blockquote id = "dialogue-email">
+                        "Animal testing is delaying us. Subject 13 goes live this cycle."
+                    </blockquote>
+                    
+                    <a href = "#scene" id = "close-popup" class = "choice">Close</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scene 1A - Hidden Protocols</title>
+        <link rel = "stylesheet" href = "styles/scene1A.css">
+    </head>
+
+    <body>
+        <div id = "scene">
+            <img id = "scene-bg" src = "backgrounds/HiddenProtocols.png">
+
+            <div id = "ui-container">
+                <p id = "choice-prompt">
+                    You have to do something...but what?
+                </p>
+
+                <nav id = "choices">
+                    <a href = "#popup-margin" class = "choice">Read the margin note</a>
+                    <a href = "scene2A-control_room.html" class = "choice">Head to the Control Room</a>
+                    <a href = "scene1B-sec_logs.html" class = "choice">Switch to the security console</a>
+                </nav>
+
+                <div id = "dialogue-box">
+                    <p id = "dialogue-text">
+                        You dig through encrypted folders and find G13_OVERRIDE. A single line makes your stomach turn:
+                    </p>
+
+                    <blockquote id = "dialogue-line">
+                        "Bypass all safety checks or terminate subject."
+                    </blockquote>
+                </div>
+            </div>
+
+            <div id = "popup-margin" class = "popup">
+                <div class = "popup-content">
+                    <h2>Margin Notes</h2>
+                    <blockquote id = "dialogue-margin">
+                        "Proceed at all costs. For the greater good."
+                    </blockquote>
+                    <p>
+                        Whoever wrote this isn't thinking of the subject's life.
+                    </p>
+                    
+                    <a href = "#scene" id = "close-popup" class = "choice">Close</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
