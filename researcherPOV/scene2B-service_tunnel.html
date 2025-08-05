@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scene 2B - Service Tunnel</title>
+        <link rel = "stylesheet" href = "styles/scene2B.css">
+    </head>
+
+    <body>
+        <div id = "scene">
+            <img id = "scene-bg" src = "backgrounds/ServiceTunnel.png">
+
+            <div id = "ui-container">
+                <p id = "choice-prompt">
+                    Theres only one way left...
+                </p>
+
+                <nav id = "choices">
+                    <a href = "scene3-final_decision.html" class = "choice">Leave one last message</a>
+                    <a href = "#popup-closet" class = "choice">Search the supply room</a>
+                </nav>
+
+                <div id = "dialogue-box">
+                    <p id = "dialogue-text">
+                        You enter the narrow tunnel. You find a small red marker in the supply room... you decide 
+                        to leave one last message for Subject 13.
+                    </p>
+                </div>
+            </div>
+
+            <div id = "popup-closet" class = "popup">
+                <div class = "popup-content">
+                    <h2>Closet Clues</h2>
+                    <p>
+                        You find a half-erased scrawl in familiar handwriting on the wall ...
+                    </p>
+
+                    <blockquote id = "dialogue-warning">
+                        "Don't trust the elevators. Remember."
+                    </blockquote>
+
+                    <a href = "#scene" id = "close-popup" class = "choice">Close</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
